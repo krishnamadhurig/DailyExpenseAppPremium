@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Expense App</h1>
+
+  <!-- Signup / Login Forms -->
+  <div id="auth-section">
+    <h2>Signup</h2>
+    <input type="text" id="signup-name" placeholder="Name">
+    <input type="email" id="signup-email" placeholder="Email">
+    <input type="password" id="signup-password" placeholder="Password">
+    <button id="signup-btn">Signup</button>
+
+    <h2>Login</h2>
+    <input type="email" id="login-email" placeholder="Email">
+    <input type="password" id="login-password" placeholder="Password">
+    <button id="login-btn">Login</button>
+  </div>
+
+  <!-- Expense App -->
+  <div id="expense-section" style="display:none;">
+    <p id="premium-badge"></p>
+
+    <h2>Add Expense</h2>
+    <input type="number" id="expense-amount" placeholder="Amount">
+    <input type="text" id="expense-desc" placeholder="Description">
+    <select id="expense-category">
+      <option value="food">Food</option>
+      <option value="salary">Salary</option>
+      <option value="vocation">Vocation</option>
+      <option value="shopping">Shopping</option>
+      <option value="fuel">Fuel</option>
+      <option value="other">Other</option>
+    </select>
+    <button id="add-expense-btn">Add Expense</button>
+
+    <h2>Expenses</h2>
+    <ul id="expenses-list"></ul>
+
+    <h2>Leaderboard</h2>
+    <ul id="leaderboard-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
